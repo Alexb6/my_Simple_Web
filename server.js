@@ -43,6 +43,21 @@ http.createServer(function(req,res) {
                 }
             });
             break;
+        case '/style2.css':
+            fs.readFile(__dirname + path, function(error, data) {
+                if (error) {
+                    res.writeHead(404);
+                    res.write(error);
+                    res.end();
+                } else {
+                    res.writeHead(200, {
+                        'Content-Type': 'text/css'
+                    });
+                    res.write(data);
+                    res.end();
+                }
+            });
+            break;
         case '/HtmlPage2.html':
             fs.readFile(__dirname + path, function(error, data) {
                 if (error) {
@@ -52,6 +67,51 @@ http.createServer(function(req,res) {
                 } else {
                     res.writeHead(200, {
                         'Content-Type': 'text/html'
+                    });
+                    res.write(data);
+                    res.end();
+                }
+            });
+            break;
+        case '/js-animation.js':
+            fs.readFile(__dirname + path, function(error, data) {
+                if (error) {
+                    res.writeHead(404);
+                    res.write(error);
+                    res.end();
+                } else {
+                    res.writeHead(200, {
+                        'Content-Type': 'text/javascript'
+                    });
+                    res.write(data);
+                    res.end();
+                }
+            });
+            break;
+        case '/js-animation2.js':
+            fs.readFile(__dirname + path, function(error, data) {
+                if (error) {
+                    res.writeHead(404);
+                    res.write(error);
+                    res.end();
+                } else {
+                    res.writeHead(200, {
+                        'Content-Type': 'text/javascript'
+                    });
+                    res.write(data);
+                    res.end();
+                }
+            });
+            break;
+        case '/jquery-3.3.1.min.js':
+            fs.readFile(__dirname + path, function(error, data) {
+                if (error) {
+                    res.writeHead(404);
+                    res.write(error);
+                    res.end();
+                } else {
+                    res.writeHead(200, {
+                        'Content-Type': 'text/javascript'
                     });
                     res.write(data);
                     res.end();
