@@ -12,39 +12,49 @@
 </head>
 
 <body>
-    <div class="maincontainer">
-        <nav class="navbar">
-            <h2 id="hamburgerMenu"><a href="#"><span class="hamburger">&#9776;</span> Menu</a></h2>
-            <ul id="navigation" class="closed">
-                <li><a href="#">Menu 1</a></li>
-                <li><a href="#">Menu 2</a> <button>Bouton</button></li>
-                <li><a href="#">Menu 3</a></li>
-            </ul>
-        </nav>
-        <div class="articlecontainer">
-            <article>
-                <img src="img/abstract-q-c-600-60-5.jpg" alt="Banniere profile">
-                <h2>Article goes here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quisquam, incidunt iure laboriosam
-                    eveniet
-                    illo, culpa reprehenderit doloribus asperiores earum esse veritatis vitae corrupti ratione itaque
-                    atque
-                    veniam, sapiente ipsam. Rerum modi eos saepe maxime minus voluptate, facere cumque vel.
-                    Voluptatibus
-                    eius labore deserunt optio maxime quia nobis laborum pariatur quos necessitatibus doloribus tempora
-                    neque nihil expedita atque quibusdam nemo quasi, fuga repellendus? Expedita autem ad quae suscipit
-                    nesciunt cumque consequuntur ut molestiae aut incidunt repellendus, id natus soluta cum, est nobis
-                    nisi
-                    hic doloremque quaerat, ea reiciendis odio nam. Minima, modi beatae explicabo maxime quisquam neque
-                    quod aliquam pariatur impedit eum excepturi nihil at, ullam iste voluptatibus nemo tenetur quae,
-                    commodi atque aperiam in molestias! Autem ipsam provident cum repellat deserunt eum delectus
-                    necessitatibus minima harum voluptatibus reprehenderit facilis culpa, veritatis neque aspernatur
-                    cumque
-                    pariatur est vero officia asperiores sit, blanditiis quisquam? Eveniet molestias corrupti ullam
-                    assumenda earum hic.</p>
-            </article>
-            <footer>
-                <img src="img/nature-q-c-200-200-1.jpg" alt="profile image">
+    <div class="firstcontainer">
+        <header class="header">
+            <div class="logo">
+                <h2 id="logoTop"><a href="#">Logo</a></h2>
+                <a href="#"><span id="hamburger">&#9776;</span></a>
+            </div>
+            <nav class="navbar">
+                <ul id="navigation" class="closed">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a><button class="btn" type="button">Bouton</button></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="maincontainer">
+            <div class="photo">
+                <img src="img/mg_800_560_paysage.jpg" alt="Banniere profile">
+                <h2>Le Titre</h2>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quisquam, incidunt iure laboriosam
+                eveniet
+                illo, culpa reprehenderit doloribus asperiores earum esse veritatis vitae corrupti ratione itaque
+                atque
+                veniam, sapiente ipsam. Rerum modi eos saepe maxime minus voluptate, facere cumque vel.
+                Voluptatibus
+                eius labore deserunt optio maxime quia nobis laborum pariatur quos necessitatibus doloribus tempora
+                neque nihil expedita atque quibusdam nemo quasi, fuga repellendus? Expedita autem ad quae suscipit
+                nesciunt cumque consequuntur ut molestiae aut incidunt repellendus, id natus soluta cum, est nobis
+                nisi
+                hic doloremque quaerat, ea reiciendis odio nam. Minima, modi beatae explicabo maxime quisquam neque
+                quod aliquam pariatur impedit eum excepturi nihil at, ullam iste voluptatibus nemo tenetur quae,
+                commodi atque aperiam in molestias! Autem ipsam provident cum repellat deserunt eum delectus
+                necessitatibus minima harum voluptatibus reprehenderit facilis culpa, veritatis neque aspernatur
+                cumque
+                pariatur est vero officia asperiores sit, blanditiis quisquam? Eveniet molestias corrupti ullam
+                assumenda earum hic.</p>
+        </main>
+        <footer>
+            <div class="footercontainer">
+                <div class="profile">
+                    <img src="img/img_640_640_grayscale_portrait.jpg" alt="profile image">
+                </div>
                 <div class="description">
                     <h2>Description</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime labore veniam recusandae quia
@@ -54,14 +64,20 @@
                         necessitatibus voluptatum ea blanditiis. Ipsa fugit consequatur illo commodi, reprehenderit
                         esse
                         ullam.</p>
-                    <button>Bouton</button>
+                    <div class="dropdown">
+                        <button onclick="btnFunction()" class="btn dropbtn">Bouton &#9660</button>
+                        <div id="myDropdown" class="dropDownContent">
+                            <input onkeyup="filterFunction()" type="text" id="myInput" placeholder="Search...">
+                            <a href="#">Choix 01</a>
+                            <a href="#">Choix 02</a>
+                            <a href="#">Choix 03</a>
+                        </div>
+                    </div>
                 </div>
-            </footer>
-
-        </div>
-
+            </div>
+        </footer>
     </div>
-    <!-- <script src="script.js"></script> -->
+    <script src="anime_JS.js"></script>
 </body>
 
 </html>
